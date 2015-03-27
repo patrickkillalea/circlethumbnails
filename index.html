@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0, maximum-scale=1.0" />
+    <link rel="icon" href="compare.ico" />
+
+    <title>Circle Thumbs</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="css/jquery.mobile.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet" />
+    <link href="css/filtermenu.css" rel="stylesheet" />
+
+    <style>
+        /**
+ * Animated Circle Gallery: Step Six */
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: #222;
+        }
+        /*GALLERY*/
+        
+        .gallery {
+            width: 1000px;
+            margin: 50px auto;
+        }
+        ul {
+            list-style: none;
+        }
+        .gallery li {
+            height: 200px;
+            width: 200px;
+            margin: 25px;
+            float: left;
+            overflow: hidden;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .gallery li img {
+            /*margin-top: -70px;*/
+            /*-webkit-transition: margin 1.5s ease;*/
+            /*-moz-transition: margin 1.5s ease;*/
+            /*-o-transition: margin 1.5s ease;*/
+            /*-ms-transition: margin 1.5s ease;*/
+            /*transition: margin 1.5s ease;*/
+            
+            
+            margin-top: -70px;
+            width: 250px;
+            height: 250px;
+            z-index: -1;
+            -webkit-transition: all 1.5s ease;
+            -moz-transition: all 1.5s ease;
+            -o-transition: all 1.5s ease;
+            -ms-transition: all 1.5s ease;
+            transition: all 1.5s ease;
+        }
+        .gallery li p {
+            width: 100px;
+            padding: 20px;
+            position: relative;
+            left: 15%;
+            top: 110%;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            font: bold 18px/1 Helvetica, Verdana, sans-serif;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            -webkit-transition: top 0.5s ease;
+            -moz-transition: top 0.5s ease;
+            -o-transition: top 0.5s ease;
+            -ms-transition: top 0.5s ease;
+            transition: top 0.5s ease;
+        }
+        .gallery li:hover img {
+            height: 400px;
+            width: 400px;
+            /*margin-left: -150px;*/
+            /*margin-top: -150px;*/
+            cursor: pointer;
+        }
+        .gallery li:hover p {
+            top: 60%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Fixed navbar -->
+
+    <div id="content" class='container'>
+        <ul id="mainTabs" class="nav nav-tabs" data-tabs="tabs">
+            <li id="mainHomeTab" class="active"><a href="#home" data-toggle="tab"><h3>Home</h3></a>
+            </li>
+            <li id="mainCharitiesTab"><a href="#charities" data-toggle="tab"><h3>Charities</h3></a>
+            </li>
+            <li id="mainRatingTab"><a href="#ratingsystem" data-toggle="tab"><h3>Rating System</h3></a>
+            </li>
+            <li id="mainBlogTab"><a href="#blog" data-toggle="tab"><h3>Blog</h3></a>
+            </li>
+            <li id="mainAboutTab"><a href="#about" data-toggle="tab"><h3>About Us</h3></a>
+            </li>
+            <li id="mainConcernTab"><a href="#contact" data-toggle="tab"><h3>Contact</h3></a>
+            </li>
+            <li class="pull-right"><a><h3 id = "pName"></h3></a>
+            </li>
+        </ul>
+
+
+        <div class="gallery">
+            <ul>
+                <li>
+                    <p>One</p><img src="http://lorempixum.com/400/400/sports/1" />
+                </li>
+                <li>
+                    <p>Two</p><img src="http://lorempixum.com/400/400/sports/2" />
+                </li>
+                <li>
+                    <p>Three</p><img src="http://lorempixum.com/400/400/sports/3" />
+                </li>
+                <li>
+                    <p>Four</p><img src="http://lorempixum.com/400/400/sports/4" />
+                </li>
+                <li>
+                    <p>Five</p><img src="http://lorempixum.com/400/400/sports/5" />
+                </li>
+                <li>
+                    <p>Six</p><img src="http://lorempixum.com/400/400/sports/6" />
+                </li>
+                <li>
+                    <p>Seven</p><img src="http://lorempixum.com/400/400/sports/7" />
+                </li>
+                <li>
+                    <p>Eight</p><img src="http://lorempixum.com/400/400/sports/8" />
+                </li>
+            </ul>
+        </div>
+
+        <!--<div class="gallery">-->
+        <div id="ExchangeHomePageDiv">
+
+            <div class="row">
+
+                <!--<ul>-->
+
+                <div class="col-xs-6 col-md-3 gallery">
+                    <li>
+                        <p>One</p><img src="http://lorempixum.com/400/400/sports/1" />
+                    </li>
+                </div>
+
+
+                <div class="col-xs-6 col-md-3 gallery">
+                    <li>
+                        <p>Two</p><img src="http://lorempixum.com/400/400/sports/2" />
+                    </li>
+                </div>
+
+
+                <div class="col-xs-6 col-md-3 gallery">
+                    <li>
+                        <p>Three</p><img src="http://lorempixum.com/400/400/sports/3" />
+                    </li>
+                </div>
+
+                <div class="col-xs-6 col-md-3 gallery">
+                    <li>
+                        <p>Four</p><img src="http://lorempixum.com/400/400/sports/4" />
+                    </li>
+                </div>
+                <!--</ul>-->
+            </div>
+        </div>
+
+        <!--</div>-->
+
+    </div>
+    <!-- Main Content End-->
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mobile.min.js"></script>
+
+</body>
+
+</html>
